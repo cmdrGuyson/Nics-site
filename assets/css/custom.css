@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
 .navbar {
   background: rgb(0, 157, 255);
   background: linear-gradient(
@@ -8,6 +19,7 @@
     rgba(0, 212, 255, 1) 100%
   );
   color: white;
+  animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 .logo {
@@ -20,7 +32,7 @@
 }
 
 .carousel {
-  height: 40rem;
+  height: 45rem;
   width: 100%;
   background: linear-gradient(
       157deg,
@@ -81,11 +93,21 @@
   -moz-box-shadow: -10px -11px 0 rgba(0, 170, 255, 1);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
 .welcome-heading {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  animation: 1s ease-out 0s 1 fadeIn;
   color: #0f0f0f;
 }
 
@@ -101,6 +123,7 @@
 .welcome-description {
   color: #666;
   line-height: 28px;
+  animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .nav-a:hover {
@@ -177,4 +200,23 @@
   background-color: #0f0f0f;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+.carousel-heading {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.carousel-description {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }

@@ -14,66 +14,69 @@
     <title>Nics</title>
   </head>
   <body class="font-sans antialiased bg-gray-50 text-gray-900">
-    <nav class="flex px-24 py-5 items-center relative navbar">
-      <div class="text-lg font-bold md:py-0 py-4">
-        <h1 class="logo text-4xl">NiCS</h1>
-      </div>
-      <ul
-        class="
-          md:px-2
-          ml-auto
-          md:flex md:space-x-2
-          absolute
-          md:relative
-          top-full
-          left-0
-          right-0
-        "
-      >
-        <li>
-          <a href="#" class="flex md:inline-flex p-4 items-center selected-nav">
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
-            <span>Business Sectors</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
-            <span>Contact</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
-            <span>Latest News</span>
-          </a>
-        </li>
-      </ul>
-      <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 fill-current"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
-          />
-        </svg>
-      </div>
-    </nav>
     <main>
       <div style="position: relative">
         <div
           class="bg-cover bg-no-repeat bg-center xl:bg-center carousel"
           style="position: relative"
         >
+          <nav class="flex px-24 py-5 items-center relative navbar">
+            <div class="text-lg font-bold md:py-0 py-4">
+              <h1 class="logo text-4xl">NiCS</h1>
+            </div>
+            <ul
+              class="
+                md:px-2
+                ml-auto
+                md:flex md:space-x-2
+                absolute
+                md:relative
+                top-full
+                left-0
+                right-0
+              "
+            >
+              <li>
+                <a
+                  href="#"
+                  class="flex md:inline-flex p-4 items-center selected-nav"
+                >
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
+                  <span>About</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
+                  <span>Business Sectors</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
+                  <span>Contact</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex md:inline-flex p-4 items-center nav-a">
+                  <span>Latest News</span>
+                </a>
+              </li>
+            </ul>
+            <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+                />
+              </svg>
+            </div>
+          </nav>
           <!-- Start Hero Block -->
           <div class="container mx-auto px-5 pb-16 sm:pb-16 lg:pb-24 xl:pb-32">
             <div class="">
@@ -85,12 +88,18 @@
                     font-black
                     sm:w-2/3 sm:text-4xl
                     md:max-w-xl md:text-5xl
+                    carousel-heading
                   "
                 >
                   LOREM IPUSUM DOLOR
                 </h1>
                 <p
-                  class="max-w-sm text-lg text-gray-100 md:max-w-md md:text-xl"
+                  class="
+                    max-w-sm
+                    text-lg text-gray-100
+                    md:max-w-md md:text-xl
+                    carousel-description
+                  "
                 >
                   Nostrum reiciendis quo explicabo laborum consectetur dicta
                   voluptate ab ducimus! Aut quos magnam quo expedita deserunt.
@@ -157,7 +166,9 @@
             <div class="grid xl:grid-cols-3">
               <div class="flex flex-col space-y-5 xl:col-span-2">
                 <h1 class="get-in-touch">Get in Touch</h1>
-                <p class="get-in-touch-sub">Range of high quality products</p>
+                <p class="get-in-touch-sub">
+                  Wide range of high quality products
+                </p>
               </div>
               <div class="space-y-2 lg:space-y-4">
                 <a class="call-to-action-btn">CALL US NOW</a>
@@ -417,7 +428,7 @@
           >
             <p>Copyright © 2021 Nics. All rights reserved.</p>
             <p>
-              Made by
+              Designed & Developed by
               <a
                 class="text-blue-500"
                 href="https://unsplash.com"
@@ -425,8 +436,9 @@
                 target="_blank"
                 >Gayanga Kuruppu</a
               >
-              at
+              <!-- at
               <a class="text-blue-500" href="#">guyson.com</a>
+            </p> -->
             </p>
           </footer>
         </div>
