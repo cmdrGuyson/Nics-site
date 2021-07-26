@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+
+.navbar {
+  background: rgb(0, 157, 255);
+  background: linear-gradient(
+    17deg,
+    rgba(0, 157, 255, 1) 48%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.logo {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.carousel {
+  height: 40rem;
+  width: 100%;
+  background: linear-gradient(
+      157deg,
+      rgba(0, 0, 0, 0.8) 4%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("../img/factory.jpg");
+  background-position: center;
+  color: white;
+  clip-path: polygon(0% 0%, 200% 0%, 35% 100%, 0% 61%);
+}
+
+.banner-right {
+  width: 75%;
+  height: 40%;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    321deg,
+    rgba(0, 212, 255, 1) 33%,
+    rgba(0, 170, 255, 1) 100%
+  );
+  position: absolute;
+  -webkit-clip-path: polygon(13% 100%, 100% 0%, 100% 0%, 100% 25%);
+  -o-clip-path: polygon(13% 100%, 100% 0%, 100% 0%, 100% 25%);
+  -ms-clip-path: polygon(13% 100%, 100% 0%, 100% 0%, 100% 25%);
+  -moz-clip-path: polygon(13% 100%, 100% 0%, 100% 0%, 100% 25%);
+  clip-path: polygon(13% 100%, 100% 0%, 100% 0%, 100% 25%);
+  right: 0;
+  bottom: 0;
+}
+
+.banner-left {
+  width: 35%;
+  height: 39%;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    321deg,
+    rgba(0, 212, 255, 1) 33%,
+    rgba(0, 170, 255, 1) 100%
+  );
+  position: absolute;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 99.6%, 0% 25%);
+  -moz-clip-path: polygon(0% 0%, 0% 0%, 100% 99.6%, 0% 25%);
+  -o-clip-path: polygon(0% 0%, 0% 0%, 100% 99.6%, 0% 25%);
+  -ms-clip-path: polygon(0% 0%, 0% 0%, 100% 99.6%, 0% 25%);
+  clip-path: polygon(0% 0%, 0% 0%, 100% 99.6%, 0% 25%);
+  z-index: 1;
+  bottom: 0;
+}
+
+.small-image-frame {
+}
+
+.small-image {
+  max-width: 300px;
+  box-shadow: -10px -11px 0 rgba(0, 170, 255, 1);
+  -webkit-box-shadow: -10px -11px 0 rgba(0, 170, 255, 1);
+  -moz-box-shadow: -10px -11px 0 rgba(0, 170, 255, 1);
+}
+
+.welcome-heading {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0f0f0f;
+}
+
+.welcome-small {
+  display: block;
+  font-size: 16px;
+  color: #04a9ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+
+.welcome-description {
+  color: #666;
+  line-height: 28px;
+}
+
+.nav-a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* transform: skewX(-15deg); */
+  transition: 0.5s ease;
+}
+
+.selected-nav {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
